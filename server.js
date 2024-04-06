@@ -5,7 +5,7 @@ const bot = new TelegramBot(token, { polling: true });
 bot.on('message', (msg) => {
   const chatId = msg.chat.id;
   if (msg.text.toString().toLowerCase().includes("/start")) {
-    bot.sendMessage(chatId, "Hi! I am your bot.");
+    bot.sendMessage(chatId, "Hi! I am your bot i will show you your sms here.");
   } else {
     bot.sendMessage(chatId, "Echo: " + msg.text);
   }
